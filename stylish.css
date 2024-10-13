@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.menus{
+    position: absolute;
+    display: none;
+    background-color: white;
+}
+
+.menu-btn:hover .menus{
+    display: block;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}

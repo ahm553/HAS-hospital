@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+    <title>Document</title>
+</head>
+<body>
+     <!--navbar start-->
+     <div class="w-auto h-20 xm:flex mm:flex ml:flex extra:flex mobile:flex ">
+        <img src="logo.png" class="xm:w-20 xm:h-20  xm:pt-2 mm:w-20 mm:h-20  mm:pt-2 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20  desktop:w-32 desktop:h-32">
+        <button onclick="menuhandle()" class="laptop:hidden desktop:hidden">
+            <i class="fa-solid fa-bars xm:pl-48 xm:text-2xl mm:pl-56 mm:text-2xl ml:text-2xl ml:pl-64 extra:text-2xl extra:pl-80 mobile:pl-[400px] mobile:text-2xl tablet:pl-[600px] "></i>
+        </button>
+        <div id="nav-log" class=" hidden   xm:fixed xm:inset-0 bg-white mm:fixed mm:inset-0 ml:fixed ml:inset-0 extra:fixed extra:inset-0 mobile:fixed mobile:inset-0 tablet:inset-0 tablet:fixed ">
+            <div class="xm:flex mm:flex ml:flex extra:flex mobile:flex tablet:flex">
+                <img src="logo.png" class="xm:w-20 xm:h-20  xm:pt-2 mm:w-20 mm:h-20  mm:pt-2 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20  desktop:w-32 desktop:h-32">
+                <button onclick="menuhandle()" class="laptop:hidden desktop:hidden">
+                 <i class="fa-solid fa-xmark   xm:pl-48 xm:text-2xl mm:pl-56 mm:text-2xl ml:text-2xl ml:pl-64 extra:text-2xl extra:pl-80 mobile:pl-[400px] mobile:text-2xl tablet:pl-[600px]"></i>
+                </button>
+            </div>
+            <div class="desktop:hidden laptop:hidden xm:h-[1900px]">
+                <ul class="xm:pl-24 mm:pl-28 ml:pl-32 extra:pl-36 mobile:pl-40 tablet:pl-72 pt-5 space-y-4 ">
+                <li class="hover:text-red-500 cursor-pointer">Home </li>
+                <li class="hover:text-red-500 cursor-pointer">About</li>
+                <li class=" cursor-pointer menu-btn">Clinical Specialist <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4 xm:p-5 xm:space-y-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>Emergency</li>
+                        <li>Mother child health</li>
+                        <li>Medicine & Allied</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class="h cursor-pointer menu-btn">Women health center <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4 xm:p-5 xm:space-y-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>Gynacologist</li>
+                        <li>Operation</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Blocks<i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-7 xm:p-5 xm:space-y-1  mm:bg-white mm:text-black mm:pl-4 mm:p-7 mm:space-x-1">
+                        <li>Block1</li>
+                        <li>Block2</li>
+                        <li>Block3</li>
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Diagnostic <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4  xm:p-4 xm:space-x-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>ENT</li>
+                        <li>EYE</li>
+                        <li>Skin</li>
+                        <li>orthopad</li>
+                        <li>General Physician</li>
+                        <li>Cancer</li>
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Hospital Facilites <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4  xm:p-4 xm:space-x-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>LAB</li>
+                        <li>Private Room</li>
+                        <li>Gyni Ward</li>
+                        <li>Operation Theater</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer">Contact us</li>
+                </ul>
+            </div>
+           
+        </div>
+  <!--for laptop and desktop-->
+        <div class="xm:hidden mm:hidden ml:hidden extra:hidden mobile:hidden tablet:hidden laptop:block desktop:block">
+            <ul class="  laptop:flex desktop:flex flex-wrap desktop:pt-10 pl-14  laptop:pt-7 desktop:space-x-10 desktop:font-serif default:text-[20pxpx] laptop:space-x-5 laptop:text-[10px] laptop:font-serif ">
+               <a href="main hospital website.html"> <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">Home </li></a>
+                <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">About</li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Clinical Specialist <i class="fa-solid fa-angle-down"></i>
+                <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black  p-6 rounded-sm  desktop:text-[16px] laptop:text-[16px]">
+                    <li>Emergency</li>
+                    <li>Mother child health</li>
+                    <li>Medicine & Allied</li>
+                    <li>Surgery</li>
+                </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Women health center <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px] ">
+                        <li>Gynacologist</li>
+                        <li>Operation</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Blocks <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px] ">
+                        <li>Block1</li>
+                        <li>Block2</li>
+                        <li>Block3</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Diagnostic <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus  desktop:pt-2 laptop:pt-2 laptop:space-y-2 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px]">
+                        <li>ENT</li>
+                        <li>EYE</li>
+                        <li>Skin</li>
+                        <li>orthopad</li>
+                        <li>General Physician</li>
+                        <li>Cancer</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Hospital Facilites <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm  desktop:text-[16px] laptop:text-[16px]">
+                        <li>LAB</li>
+                        <li>Private Room</li>
+                        <li>Gyni Ward</li>
+                        <li>Operation Theater</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">Cointact us</li>
+            </ul>
+        </div>
+    </div>
+    <!--navbar end-->
+
+    <!--sub hero section start-->
+<div class="   xm:bg-red-600 xm:w-auto xm:h-16 mm:bg-red-600 mm:w-auto mm:h-16 ml:bg-red-600 ml:w-auto ml:h-16 extra:bg-red-600 extra:w-auto extra:h-16 mobile:bg-red-600 mobile:w-auto mobile:h-16 tablet:bg-red-600 tablet:w-auto tablet:h-16 tablet:mt-4 desktop:mt-16 desktop:h-16">
+    <button class="xm:text-white xm:pl-3  xm:pt-3 mm:text-white mm:pl-3 mm:pt-3 ml:text-white ml:pl-3 ml:pt-3 extra:pl-3 extra:pt-3 extra:text-white mobile:pl-5 mobile:pt-4 mobile:text-white tablet:pl-8 tablet:pt-4 tablet:text-white desktop:pl-10 desktop:pt-4 desktop:text-white desktop:text-[20px] laptop:text-[20px]">Donate <i class="fa-solid fa-hand-holding-dollar "></i></button>
+    <a href="appoint.html" class="xm:text-white xm:pl-2  mm:text-white mm:pl-3 mm:pt-3 ml:text-white ml:pl-3 ml:pt-3 extra:pl-3 extra:pt-3 extra:text-white mobile:pl-5 mobile:pt-4 mobile:text-white tablet:pl-8 tablet:pt-4 tablet:text-white desktop:text-white desktop:pl-4 desktop:text-[20px] laptop:text-[20px]  cursor-pointer">Appointment <i class="fa-solid fa-calendar-check "></i></a>
+    
+    </div>
+    
+    <!--sub hero section end-->
+
+    <!--emergency pic start-->
+    <img src="block 1.jpg" class="desktop:w-[650px] desktop:h-80 desktop:ml-[340px] desktop:mt-10">
+
+
+    <!--emergency pic end-->
+
+
+
+<!-- Emergency START-->
+<div  class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 desktop:mt-3 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-2xl border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <h1 class="xm:pl-24 xm:pt-3 xm:text-2xl font-serif mm:pl-24 mm:text-2xl ml:pl-24 ml:font-serif ml:text-2xl extra:text-2xl extra:font-serif extra:pl-28 mobile:pl-32 mobile:font-serif mobile:text-2xl desktop:text-3xl desktop:font-serif desktop:pl-80 laptop:font-serif laptop:text-3xl laptop:pl-80">Emergency</h1>
+    <p1 class="font-serif xm:p-3 text-[17px]  desktop:pt-5">There are three blocks of Hazrat Ayesha Saddiqia Hospital (HAS).The Block 1 consist of OPD dispensary and also the General Physician is also setting in Block 1 and The admin office is also in Block 1. And also the ENT and Eye ward and also dentist is set in Block 1 and our vision is to provide the high class facilities in low cost and you can visit anywhere in HAS   </p1>
+    </div>
+    <!-- Emergency end-->
+    
+   
+    
+</body>
+</html>

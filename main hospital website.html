@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+  
+
+    <title>Document</title>
+    <style>
+        
+     .img-slide{
+         background-image: url("hos3.jpg");
+        animation: changeImage 10s linear infinite;
+       background-position: center;
+       width: auto;
+       height: 500px;
+       background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+@keyframes changeImage{
+    0%{
+        background-image: url("doc2.jpg");
+    }
+    25%{
+        background-image: url("doc3.jpg");
+    }
+    50%{
+        background-image: url("doc4.jpg");
+    }
+    50%{
+        background-image: url("doc4.jpg");
+    }
+    50%{
+        background-image: url("doc4.jpg");
+    }
+    75%{
+        background-image: url("hos3.jpg");
+    }
+
+
+}
+
+    </style>
+    
+</head>
+<body>
+    <!--navbar start-->
+    <div class="w-auto h-20 xm:flex mm:flex ml:flex extra:flex mobile:flex ">
+        <img src="logo.png" class="xm:w-20 xm:h-20  xm:pt-2 mm:w-20 mm:h-20  mm:pt-2 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20  desktop:w-32 desktop:h-32">
+        <button onclick="menuhandle()" class="laptop:hidden desktop:hidden">
+            <i class="fa-solid fa-bars xm:pl-48 xm:text-2xl mm:pl-56 mm:text-2xl ml:text-2xl ml:pl-64 extra:text-2xl extra:pl-80 mobile:pl-[400px] mobile:text-2xl tablet:pl-[600px] "></i>
+        </button>
+        <div id="nav-log" class=" hidden   xm:fixed xm:inset-0 bg-white mm:fixed mm:inset-0 ml:fixed ml:inset-0 extra:fixed extra:inset-0 mobile:fixed mobile:inset-0 tablet:inset-0 tablet:fixed ">
+            <div class="xm:flex mm:flex ml:flex extra:flex mobile:flex tablet:flex">
+                <img src="logo.png" class="xm:w-20 xm:h-20  xm:pt-2 mm:w-20 mm:h-20  mm:pt-2 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20  desktop:w-32 desktop:h-32">
+                <button onclick="menuhandle()" class="laptop:hidden desktop:hidden">
+                 <i class="fa-solid fa-xmark   xm:pl-48 xm:text-2xl mm:pl-56 mm:text-2xl ml:text-2xl ml:pl-64 extra:text-2xl extra:pl-80 mobile:pl-[400px] mobile:text-2xl tablet:pl-[600px]"></i>
+                </button>
+            </div>
+            <div class="desktop:hidden laptop:hidden xm:h-[1900px]">
+                <ul class="xm:pl-24 mm:pl-28 ml:pl-32 extra:pl-36 mobile:pl-40 tablet:pl-72 pt-5 space-y-4 ">
+                <li class="hover:text-red-500 cursor-pointer">Home </li>
+                <li class="hover:text-red-500 cursor-pointer">About</li>
+                <li class=" cursor-pointer menu-btn">Clinical Specialist <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4 xm:p-5 xm:space-y-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                       <a href="emergency.html"><li>Emergency</li></a>
+                        <li>Mother child health</li>
+                        <li>Medicine & Allied</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class="h cursor-pointer menu-btn">Women health center <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4 xm:p-5 xm:space-y-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>Gynacologist</li>
+                        <li>Operation</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Blocks<i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-7 xm:p-5 xm:space-y-1  mm:bg-white mm:text-black mm:pl-4 mm:p-7 mm:space-x-1">
+                     <a href="block1.html"><li>Block1</li></a>   
+                       <a href="block2.html">  <li>Block2</li></a>
+                       <a href="block3.html"> <li>Block3</li></a> 
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Diagnostic <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4  xm:p-4 xm:space-x-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>ENT</li>
+                        <li>EYE</li>
+                        <li>Skin</li>
+                        <li>orthopad</li>
+                        <li>General Physician</li>
+                        <li>Cancer</li>
+                    </ul>
+                </li>
+                <li class=" cursor-pointer menu-btn">Hospital Facilites <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus xm:bg-white xm:text-black xm:pl-4  xm:p-4 xm:space-x-1 mm:bg-white mm:text-black mm:pl-4 mm:p-5 mm:space-x-1">
+                        <li>LAB</li>
+                        <li>Private Room</li>
+                        <li>Gyni Ward</li>
+                        <li>Operation Theater</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer">Contact us</li>
+                
+                </ul>
+            </div>
+           
+        </div>
+<!--for laptop and desktop-->
+
+
+        <div  id="navbar"  class="xm:hidden mm:hidden ml:hidden extra:hidden mobile:hidden tablet:hidden laptop:block desktop:block    sticky-navbar ">
+            <ul class="  laptop:flex desktop:flex flex-wrap desktop:pt-10 pl-14  laptop:pt-7 desktop:space-x-10 desktop:font-serif default:text-[20pxpx] laptop:space-x-5 laptop:text-[10px] laptop:font-serif ">
+                <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">Home </li>
+                <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">About</li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Clinical Specialist <i class="fa-solid fa-angle-down"></i>
+                <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black  p-6 rounded-sm  desktop:text-[16px] laptop:text-[16px]">
+                    <a href="emergency.html"><li>Emergency</li></a>
+                    <li>Mother child health</li>
+                    <li>Medicine & Allied</li>
+                    <li>Surgery</li>
+                </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Women health center <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px] ">
+                        <li>Gynacologist</li>
+                        <li>Operation</li>
+                        <li>Surgery</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Blocks <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-10 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px] ">
+                        <a href="block1.html"><li>Block1</li></a>   
+                        <a href="block2.html">  <li>Block2</li></a>
+                        <a href="block3.html"> <li>Block3</li></a> 
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Diagnostic <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus  desktop:pt-2 laptop:pt-2 laptop:space-y-2 text-black bg-white p-6 rounded-sm desktop:text-[16px] laptop:text-[16px]">
+                        <li>ENT</li>
+                        <li>EYE</li>
+                        <li>Skin</li>
+                        <li>orthopad</li>
+                        <li>General Physician</li>
+                        <li>Cancer</li>
+                    </ul>
+                </li>
+                <li class="hover:text-red-500 cursor-pointer menu-btn desktop:text-[16px] laptop:text-[16px]">Hospital Facilites <i class="fa-solid fa-angle-down"></i>
+                    <ul class="menus desktop:space-y-4 desktop:pt-2 laptop:pt-2 laptop:space-y-4 text-black bg-white p-6 rounded-sm  desktop:text-[16px] laptop:text-[16px]">
+                        <li>LAB</li>
+                        <li>Private Room</li>
+                        <li>Gyni Ward</li>
+                        <li>Operation Theater</li>
+                    </ul>
+                </li>
+               <a href="contact1.html"> <li class="hover:text-red-500 cursor-pointer desktop:text-[16px] laptop:text-[16px]">Cointact us</li></a>
+            </ul>
+        </div>
+    </div>
+    <!--navbar end-->
+<!--sub hero section start-->
+<div class="   xm:bg-red-600 xm:w-auto xm:h-16 mm:bg-red-600 mm:w-auto mm:h-16 ml:bg-red-600 ml:w-auto ml:h-16 extra:bg-red-600 extra:w-auto extra:h-16 mobile:bg-red-600 mobile:w-auto mobile:h-16 tablet:bg-red-600 tablet:w-auto tablet:h-16 tablet:mt-4 desktop:mt-16 desktop:h-16">
+<button class="xm:text-white xm:pl-3  xm:pt-3 mm:text-white mm:pl-3 mm:pt-3 ml:text-white ml:pl-3 ml:pt-3 extra:pl-3 extra:pt-3 extra:text-white mobile:pl-5 mobile:pt-4 mobile:text-white tablet:pl-8 tablet:pt-4 tablet:text-white desktop:pl-10 desktop:pt-4 desktop:text-white desktop:text-[20px] laptop:text-[20px]">Donate <i class="fa-solid fa-hand-holding-dollar "></i></button>
+<a href="appoint.html" class="xm:text-white xm:pl-2  mm:text-white mm:pl-3 mm:pt-3 ml:text-white ml:pl-3 ml:pt-3 extra:pl-3 extra:pt-3 extra:text-white mobile:pl-5 mobile:pt-4 mobile:text-white tablet:pl-8 tablet:pt-4 tablet:text-white desktop:text-white desktop:pl-4 desktop:text-[20px] laptop:text-[20px]  cursor-pointer">Appointment <i class="fa-solid fa-calendar-check "></i></a>
+
+</div>
+
+<!--sub hero section end-->
+
+<!--slider start-->
+<div class="img-slide"></div>
+
+<!--slider end-->
+
+<!--vision section start-->
+
+<div data-aos="fade-left" class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-2xl border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+<h1 class="xm:pl-24 xm:pt-3 xm:text-2xl font-serif mm:pl-24 mm:text-2xl ml:pl-24 ml:font-serif ml:text-2xl extra:text-2xl extra:font-serif extra:pl-28 mobile:pl-32 mobile:font-serif mobile:text-2xl desktop:text-3xl desktop:font-serif desktop:pl-80 laptop:font-serif laptop:text-3xl laptop:pl-80">Vision</h1>
+<p1 class="font-serif xm:p-3 text-[17px]">Hazrat Ayesha Siddiqa Hospital (trust) is a welfare hospital serving the deserving since 1984. HASH provides all kind of Medical Facilities to deserving people within slip of only twenty rupees. HASH motives to serve the deserve with best.And our vision is server mankind and help people all over the pakistan</p1>
+</div>
+<!-- vision section end-->
+
+<!--history section start-->
+<div data-aos="fade-right" class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-2xl border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <h1 class="xm:pl-24 xm:pt-3 xm:text-2xl font-serif mm:pl-24 mm:text-2xl ml:pl-24 ml:font-serif ml:text-2xl extra:text-2xl extra:font-serif extra:pl-28 mobile:pl-32 mobile:font-serif mobile:text-2xl desktop:text-3xl desktop:font-serif desktop:pl-80 laptop:font-serif laptop:text-3xl laptop:pl-80">History</h1>
+    <p1 class="font-serif xm:p-3 text-[17px]">Hazrat ayesha siddiqa hospital (Trust) is one of the best healthcare service provider in Misri Shah, Lahore. Providing you with the best patient experience and medical professionals. Treatments and Diagnostic services at Hazrat ayesha siddiqa hospital (Trust) in Lahore are carried out through latest healthcare technology. Hazrat ayesha siddiqa hospital (Trust) is known for their services around the Lahore.</p1>
+    </div>
+<!--history section end-->
+
+
+
+
+
+
+<!--department section start-->
+<h1 class="font-serif mt-4 text-2xl xm:pl-14 mm:pl-20 ml:pl-24 extra:pl-28 mobile:pl-36 tablet:pl-72 laptop:pl-[500px] desktop:pl-[540px]">Our Departments</h1>
+<div class="xm:grid xm:grid-cols-1 mm:grid mm:grid-cols-1 ml:grid ml:grid-cols-1 extra:grid extra:grid-cols-1 mobile:grid mobile:grid-cols-1 tablet:grid tablet:grid-cols-2 laptop:grid laptop:grid-cols-3 desktop:grid desktop:grid-cols-3">
+<div data-aos="fade-left">
+    <img src="dentist.png" class="xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32 ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40 ">
+    <h1 class="xm:pt-2 xm:pl-32 font-serif text-2xl mm:pl-36 ml:pl-36 extra:pl-40 mobile:pl-44">Dentist</h1>
+</div>
+
+<div  data-aos="fade-right">
+    <img src="gyni.png" class="xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32  extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-24 font-serif text-2xl mm:pl-28 ml:pl-28 extra:pl-32 mobile:pl-40">Gynacologist</h1>
+</div>
+
+<div data-aos="fade-left">
+    <img src="eye.png" class="xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-36 font-serif text-2xl mm:pl-40 ml:pl-40 extra:pl-44 mobile:pl-48">EYE</h1>
+</div>
+
+<div data-aos="fade-right">
+    <img src="ortho.png" class="  xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-28 font-serif text-2xl mm:pl-32 ml:pl-32 extra:pl-36 mobile:pl-40">orthopad</h1>
+</div>
+
+<div data-aos="fade-right">
+    <img src="Skin.png" class="  xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-36 font-serif text-2xl mm:pl-40 ml:pl-40 extra:pl-44 mobile:pl-48">Skin</h1>
+</div>
+
+<div data-aos="fade-left">
+    <img src="PT.png" class="  xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-24 font-serif text-2xl mm:pl-28 ml:pl-28 extra:pl-32 mobile:pl-36">Physio Threpy</h1>
+</div>
+
+<div data-aos="fade-right">
+    <img src="G.P.png" class="  xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-20 font-serif text-2xl mm:pl-24 ml:pl-24 extra:pl-32 mobile:pl-36">General Physician</h1>
+</div>
+
+<div data-aos="fade-left">
+    <img src="ENT.png" class="  xm:w-28 xm:h-28  xm:ml-28 xm:mt-4 rounded-full shadow-2xl mm:w-28 mm:h-28 mm:shadow-2xl mm:mt-4 mm:ml-32  ml:w-28 ml::h-28 ml:shadow-2xl ml:mt-4 ml:ml-32 extra:w-28 extra:h-28 extra:shadow-2xl extra::mt-4 extra:ml-36 mobile:w-28 mobile:h-28 mobile:shadow-2xl mobile:mt-4 mobile:ml-40">
+    <h1 class="xm:pt-2 xm:pl-36 font-serif text-2xl mm:pl-40 ml:pl-40 extra:pl-44 mobile:pl-44 desktop:pl-[190px]">ENT</h1>
+</div>
+</div>
+<!--department section end-->
+ 
+<!--faqs section start-->
+<h1 class="font-serif mt-8 text-2xl xm:pl-32 mm:pl-40 ml:pl-40 extra:pl-44 mobile:pl-48 tablet:pl-96 laptop:pl-[600px] desktop:pl-[620px]">FAQS</h1>
+<div data-aos="fade-right" class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-lg border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <div class=" border-b-2 border-gray-300" >
+        <p1 class="font-serif xm:p-3 text-[17px] ">Q1:How can I book an appointment with a doctor in Hazrat ayesha siddiqa hospital (Trust), Misri Shah Lahore?</p1>
+    </div>
+ <p1 class="font-serif xm:p-3 text-[17px]">Ans: Click here to book an appointment with a doctor or you can also call 042-37283027 from 9 AM to 11 PM to book your appointment.</p1>
+</div>
+
+
+<div data-aos="fade-left" class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-lg border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <div class=" border-b-2 border-gray-300" >
+        <p1 class="font-serif xm:p-3 text-[17px] ">Q1:What is the address of Hazrat ayesha siddiqa hospital (Trust), Misri Shah Lahore?</p1>
+    </div>
+ <p1 class="font-serif xm:p-3 text-[17px]">Ans: Allah Bukhsh St, Wassan Pura, Misri Shah, Lahore.</p1>
+</div>
+
+
+<div data-aos="fade-right" class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-lg border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <div class=" border-b-2 border-gray-300" >
+        <p1 class="font-serif xm:p-3 text-[17px] ">Q2:What is the fee range of doctors in Hazrat ayesha siddiqa hospital (Trust), Misri Shah Lahore?</p1>
+    </div>
+ <p1 class="font-serif xm:p-3 text-[17px]">Ans:The fee for doctors ranges from 100 to 150. You will pay at the reception when you visit the doctor. </p1>
+</div>
+
+<div  class="xm:w-72 xm:h-full border-2 mm:w-72 mm:h-full mm:mt-2 mm:ml-9 ml:w-72 ml:h-full ml:mt-2 ml:ml-14 ml:p-5 extra:w-[350px] extra:h-full extra:mt-2 extra:ml-12 extra:p-5 mobile:w-[380px] mobile:h-full mobile:p-5 mobile:ml-16 mobile:mt-2  desktop:w-[850px] desktop:ml-56 laptop:w-[850px] tablet:ml-56 laptop:ml-56 laptop:mt-2 laptop:p-5  shadow-lg border-gray-200 xm:mt-2 xm:ml-4 xm:p-4 mm:p-4 border-r-2 rounded-md">
+    <div class=" border-b-2 border-gray-300" >
+        <p1 class="font-serif xm:p-3 text-[17px] ">Q1:Operational timing in Hazrat ayesha siddiqa hospital (Trust)</p1>
+    </div>
+ <p1 class="font-serif xm:p-3 text-[17px]">Ans: Hazrat ayesha siddiqa hospital (Trust) is 24/7 operational</p1>
+</div>
+<!--faqs section end-->
+
+<!--footer start-->
+
+<div class="xm:w-auto xm:h-80 xm:bg-red-700 xm:mt-2 mm:w-auto mm:h-96 mm:bg-red-700 mm:mt-2 ml:bg-red-700 ml:w-auto ml:h-96 ml:mt-2 extra:bg-red-700 extra:w-auto extra:h-96 extra:mt-2 mobile:bg-red-700 mobile:mt-2 mobile:w-auto mobile:h-96 ">
+<h1 class="xm:pl-24 xm:text-white xm:text-[20px] xm:pt-6 font-serif mm:pl-28 mm:text-white mm:text-[20px] mm:pt-6 ml:pl-32 ml:text-white ml:text-[20px] ml:pt-6  extra:pl-32 extra:text-white extra:text-[20px] extra:pt-6  mobile:pl-36 mobile:text-white mobile:text-[20px] mobile:pt-6 tablet:pl-72 tablet:text-white tablet:text-[20px] tablet:pt-6 desktop:pl-[570px] laptop:pl-[500px]">Importan Links</h1>
+<div class="flex xm:mt-4 hover:text-yellow-600 mm:mt-4 ml:mt-4 extra:mt-4 mobile:mt-4 tablet:mt-6">
+    <ul class="font-serif text-white xm:pl-3 xm:space-y-1 mm:pl-3 mm:space-y-3 ml:pl-3 ml:space-y-3 extra:pl-4  extra:space-y-4 mobile:pl-4 mobile:space-y-5 tablet:pl-3 tablet:space-y-5 desktop:pl-20 desktop:space-y-4 desktop:text-[20px]">
+        <li>Visit</li>
+        <li>Blogs</li>
+        <li>Lab</li>
+        <li>Private Room</li>
+        <li>Specialist</li>
+    </ul>
+    
+    <ul class="font-serif text-white xm:pl-4 xm:space-y-2  mm:pl-3 mm:space-y-3 ml:pl-10 ml:space-y-3 extra:pl-12 extra:space-y-4 mobile:pl-20 mobile:space-y-5 tablet:pl-44 tablet:space-y-5  desktop:pl-96  desktop:space-y-4 desktop:text-[20px]">
+        <li>Wards</li>
+        <li>Dispensary</li>
+        <li>24hours</li>
+        <li>Members</li>
+        <li>doctors</li>
+    </ul>
+
+    <ul class="font-serif text-white xm:pl-8 xm:space-y-2 mm:pl-7 mm:space-y-3 ml:pl-16 ml:space-y-3 extra:pl-20 extra:space-y-4 mobile:pl-32 mobile:space-y-5 tablet:pl-64 tablet:space-y-5  desktop:pl-96 desktop:space-y-4 desktop:text-[20px]">
+        <li>Facebook</li>
+        <li>Whatsapp</li>
+        <li>Twiter</li>
+        <li>Number</li>
+        <li>Accounts</li>
+    </ul>
+</div>
+<div class="xm:pl-20 xm:space-x-8 xm:pt-11 text-2xl  mm:pl-20 mm:space-x-8 mm:pt-12 ml:pl-24 ml:space-x-8 ml:pt-12  extra:pl-28 extra:space-x-8 extra:pt-14   mobile:pl-36 mobile:space-x-8 mobile:pt-12 tablet:text-3xl tablet:pl-64 tablet:space-x-14 tablet:pt-12 desktop:pl-[560px] desktop:space-x-11 desktop:text-3xl">
+<i class="fa-brands fa-facebook text-blue-600"></i>
+<i class="fa-brands fa-whatsapp text-green-400"></i>
+<i class="fa-brands fa-twitter text-blue-300"></i>
+</div>
+
+</div>
+<div class="xm:bg-black xm:w-auto xm:h-20 text-white font-serif xm:text-[14px] xm:pt-3 xm:pl-3 mm:bg-black mm:w-auto mm:h-20 mm:text-[14px] mm:pt-3 mm:pl-3 ml:bg-black ml:pl-3 ml:w-auto ml:h-20 ml:text-[14px] ml:pt-3  extra:bg-black extra:pl-3 extra:w-auto extra:h-20 extra:text-[14px] extra:pt-3  mobile:bg-black mobile:pl-3 mobile:w-auto mobile:h-20 mobile:text-[14px] mobile:pt-3 tablet:pl-36 tablet:pt-5 tablet:text-[17px]  desktop:text-[18px] desktop:pl-[370px] desktop:pt-4 ">
+<h1>Copyright © 2024 Ayesha Saddiqia Hospital Powered by HAS</h1>
+</div>
+
+<!--footer end-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init({
+    Offset: 300,
+    duration: 800,
+
+  }
+    
+  );
+</script>
+</body>
+<script src="app.js"></script>
+</html>

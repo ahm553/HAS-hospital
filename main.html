@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar start-->
+  <div class="   xm:w-auto xm:h-24 xm:flex mm:flex mm:w-auto mm:h-24 ml:flex extra:flex mobile:flex">
+    <img src="logo.png" class="   xm:w-20 xm:h-20 mm:w-20 mm:h-20 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20">
+<div class=" laptop:hidden desktop:hidden">
+<button onclick="handlemenu()">
+    <i class="  fa-solid fa-bars xm:text-2xl mm:font-serif mm:text-2xl ml:text-2xl xm:pl-48 mm:pl-56 ml:pl-[270px] extra:text-2xl extra:pl-[320px] mobile:text-2xl mobile:pl-[370px] tablet:pl-[600px] xm:pt-9 mm:pt-9 ml:pt-7 extra:pt-7 mobile:pt-7 "></i>
+</button>
+</div>
+<!--for laptop and pc-->
+<div class="xm:hidden mm:hidden ml:hidden extra:hidden mobile:hidden tablet:hidden desktop:block laptop:block">
+<ul class="flex pl-96 pt-7 space-x-28 font-serif text-[20px] ">
+    <li class="hover:text-lime-500 cursor-pointer style relative">Home
+        <div id="style1" class="border-b-2 border-red-600   "></div>
+    </li>
+    <li class="hover:text-lime-500 cursor-pointer style" >Contact
+        <div  id="style1" class="border-b-2 border-red-600"></div>
+    </li>
+    <li class="hover:text-lime-500 cursor-pointer style" >Appointment
+        <div  id="style1" class="border-b-2 border-red-600"></div>
+    </li>
+</ul>
+</div>
+<!--for laptop and pc-->
+</div>
+<div id="nav-log" class=" hidden xm:fixed xm:bg-white xm:inset-0 mm:fixed mm:bg-white mm:inset-0 ml:fixed ml:bg-white ml:inset-0 extra:fixed extra:inset-0 extra:bg-white mobile:fixed mobile:inset-0 mobile:bg-white">
+    <div class="xm:w-auto xm:h-24 xm:flex mm:flex mm:w-auto mm:h-24 ml:flex extra:flex mobile:flex">
+        <img src="logo.png" class="xm:w-20 xm:h-20   mm:w-20 mm:h-20 ml:w-20 ml:h-20 extra:w-20 extra:h-20 mobile:w-20 mobile:h-20">
+
+    <button  onclick="handlemenu()" >
+        <i  class="fa-solid fa-xmark xm:text-2xl  xm:pl-48 mm:pl-56 mm:text-2xl ml:pl-[270px] ml:text-2xl extra:text-2xl extra:pl-[320px] mobile:pl-[370px] mobile:text-2xl tablet:pl-[600px] laptop:hidden"></i>
+    </button>
+    </div>
+       <ul class="xm:font-serif xm:pl-32 xm:pt-6 xm:space-y-7 mm:font-serif mm:pl-36 mm:pt-6 mm:space-y-7  ml:font-serif ml:pl-40 ml:pt-6 ml:space-y-7  extra:pl-44 extra:font-serif extra:pt-6 extra:space-y-7 mobile:pl-52 mobile:pt-5 mobile:space-y-7 tablet:pl-80 tablet:pt-5 tablet:font-serif tablet:space-y-7">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Appointment</li>
+       </ul>
+</div>
+<!--navbar end-->
+<img src="hos3.jpg">
+
+<!--block section start-->
+
+<div class="xm:grid xm:space-y-9 xm:pt-10 xm:pl-10 mm:pt-10 mm:pl-14 ml:pt-10 ml:pl-16 mm:space-y-9 ml:space-y-9 extra:space-y-9 extra:pt-10 extra:pl-20 mobile:pt-10 mobile:pl-24 mobile:space-y-9 tablet:pl-60   xm:grid-cols-1 mm:grid mm:grid-cols-1 ml:grid ml:grid-cols-1 extra:grid extra:grid-cols-1 mobile:grid mobile:grid-cols-1 tablet:grid tablet:grid-cols-1  laptop:hidden desktop:hidden ">
+<div class="xm:bg-black xm:w-52  mm:bg-black mm:w-56  ml:bg-black ml:w-64  extra:bg-black extra:w-64  mobile:bg-black mobile:w-72 tablet:bg-black tablet:w-72 ">
+<img src="block 1.jpg" class="">
+</div>
+<div class="xm:bg-black xm:w-52  mm:bg-black mm:w-56  ml:bg-black ml:w-64  extra:bg-black extra:w-64  mobile:bg-black mobile:w-72 tablet:bg-black tablet:w-72    ">
+<img src="block 2.jpeg">
+</div>
+<div class="xm:bg-black xm:w-52  mm:bg-black mm:w-56  ml:bg-black ml:w-64   extra:bg-black extra:w-64  mobile:bg-black mobile:w-72   tablet:bg-black tablet:w-72   ">
+<img src="block 3.jpg">
+</div>
+
+
+</div>
+
+
+<!--for laptop and deskstop-->
+<div class=" xm:hidden mm:hidden ml:hidden extra:hidden mobile:hidden tablet:hidden laptop:grid laptop:grid-cols-3 desktop:grid desktop:grid-cols-3 desktop:pl-14 desktop:pt-7 laptop:pt-7 laptop:pl-14">
+<div data-aos="fade-left"  class="desktop:bg-black desktop:w-72 desktop:h-52 laptop:bg-black laptop:w-72 laptop:h-32">
+<img  src="block 1.jpg" class="laptop:h-52 desktop:h-52">
+<h1 class="font-serif text-2xl pt-3">Block 1</h1>
+</div>
+
+<div  data-aos="fade-down" class="desktop:bg-black desktop:w-64 desktop:h-52 laptop:bg-black laptop:w-64 laptop:h-52">
+<img src="block 2.jpeg" class="laptop:h-52 desktop:h-52">
+<h1 class="font-serif text-2xl pt-3">Block 2</h1>
+
+</div>
+<div  data-aos="fade-right" class="desktop:bg-black desktop:w-72 desktop:h-52 laptop:bg-black laptop:w-72 laptop:h-52">
+    <img src="block 3.jpg" class="laptop:h-52 desktop:h-52">
+<h1 class="font-serif text-2xl pt-3">Block 3</h1>
+
+</div>
+
+</div>
+</div>
+<!--block section end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+</body>
+<script src="app.js"></script>
+</html>
